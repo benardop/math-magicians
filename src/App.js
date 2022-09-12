@@ -11,7 +11,7 @@ function App() {
           {' '}
           <code>src/App.js</code>
           {' '}
-          and save to reload.
+          set up is working
         </p>
         <a
           className="App-link"
