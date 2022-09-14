@@ -61,14 +61,14 @@ body {
   background-color: rgb(224, 224, 224);
 }
 
-.dark-gray {
+.input-row {
   box-sizing: border-box;
   border: 0 solid black;
   display: flex;
   padding-right: 1rem;
   height: 50px;
   width: 400px;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   background-color: rgb(133, 134, 148);
 }
