@@ -4,6 +4,7 @@ import Item from './Item';
 function Calculator() {
   return (
     <div className="calculator">
+      <div id="display" className="input-row">{0}</div>
       <Item label="AC" cl="light-gray" />
       <Item label="+/-" cl="light-gray" />
       <Item label="%" cl="light-gray" />
