@@ -26,7 +26,7 @@ Run the command below from the Terminal:
 
 ## Usage
 Run the following command in yout terminal to start your local server to run the App:
-np run start
+npm run start
 
 ## Authors
 
