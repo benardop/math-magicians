@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 class Item extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.handleObjectChange = this.handleObjectChange.bind(this);
+    this.objetChangeEvent = this.objetChangeEvent.bind(this);
   }
 
-  handleObjectChange() {
-    const { label, handleObjectChange } = this.props;
-    handleObjectChange(label);
+  objetChangeEvent() {
+    const { label, objetChangeEvent } = this.props;
+    objetChangeEvent(label);
   }
 
   render() {
@@ -19,7 +19,7 @@ class Item extends React.PureComponent {
       <button
         className={`item   ${cl}`}
         type="submit"
-        onClick={this.handleObjectChange}
+        onClick={this.objetChangeEvent}
       >
         {label}
 
@@ -31,7 +31,7 @@ class Item extends React.PureComponent {
 Item.propTypes = {
   label: PropTypes.string.isRequired,
   cl: PropTypes.string.isRequired,
-  handleObjectChange: PropTypes.func.isRequired,
+  objetChangeEvent: PropTypes.func.isRequired,
 
 };
 
