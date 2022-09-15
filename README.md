@@ -24,6 +24,9 @@ Run the command below from the Terminal:
 
 	  cd math-magicians
 
+## Usage
+Run the following command in yout terminal to start your local server to run the App:
+npm run start
 
 ## Authors
 
@@ -38,7 +41,7 @@ Run the command below from the Terminal:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/benardop/LeaderBoard/issues).
+Feel free to check the [issues page](https://github.com/benardop/math-magicians/issues).
 
 ## Show your support
 
