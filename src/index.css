@@ -46,7 +46,7 @@ body {
 }
 
 .item:hover {
-  background-color: #22c2f3;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
