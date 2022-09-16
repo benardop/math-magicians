@@ -23,6 +23,8 @@ Run the command below from the Terminal:
       git clone <URL> ' https://github.com/benardop/math-magicians.git' in your terminal
 
 	  cd math-magicians
+        run the following commend to install packages:
+        npm install
 
 ## Usage
 Run the following command in yout terminal to start your local server to run the App:
