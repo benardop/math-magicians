@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ButtonItem from './ButtonItem';
-import Calculate from '../logic/calculate';
+import calculate from '../logic/calculate';
 
 function Calculator() {
   const [object, setObject] = useState({
@@ -9,26 +9,14 @@ function Calculator() {
     next: null,
   });
 
-  const [display, setDisplay] = useState('');
-
   const objetChangeEvent = (button) => {
-    const newObject = Calculate(object, button);
+    const newObject = calculate(object, button);
     setObject(newObject);
-
-    if (button === '=') {
-      setDisplay(newObject.total);
-    } else if (button === 'AC') {
-      setDisplay('');
-    } else if (button === '+/-') {
-      setDisplay('-');
-    } else {
-      setDisplay(display + button);
-    }
   };
 
   return (
     <div className="calculator">
-      <div id="display" className="input-row">{display}</div>
+      <div id="display" className="input-row">{object.next || object.total || 0}</div>
       <ButtonItem label="AC" cl="light-gray" objetChangeEvent={objetChangeEvent} />
       <ButtonItem label="+/-" cl="light-gray" objetChangeEvent={objetChangeEvent} />
       <ButtonItem label="%" cl="light-gray" objetChangeEvent={objetChangeEvent} />
