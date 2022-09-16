@@ -12,7 +12,7 @@ Microverse Module 03 Project: This educational project is to create a React Calc
 - Linters
 
 ## Live Demo
-[Live Demo Link](https://github.com/benardop/math-magicians.git)
+[Live Demo Link](https://benardop.github.io/math-magicians/)
 
 
 Please get your browser update.
