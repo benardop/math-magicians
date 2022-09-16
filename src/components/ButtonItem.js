@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Item extends React.PureComponent {
+class ButtonItem extends React.PureComponent {
   constructor(props) {
     super(props);
     this.objetChangeEvent = this.objetChangeEvent.bind(this);
@@ -28,11 +28,11 @@ class Item extends React.PureComponent {
     );
   }
 }
-Item.propTypes = {
+ButtonItem.propTypes = {
   label: PropTypes.string.isRequired,
   cl: PropTypes.string.isRequired,
   objetChangeEvent: PropTypes.func.isRequired,
 
 };
 
-export default Item;
+export default ButtonItem;
