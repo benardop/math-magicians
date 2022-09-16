@@ -19,6 +19,8 @@ function Calculator() {
       setDisplay(newObject.total);
     } else if (button === 'AC') {
       setDisplay('');
+    } else if (button === '+/-') {
+      setDisplay('-');
     } else {
       setDisplay(display + button);
     }
