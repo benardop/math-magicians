@@ -1,6 +1,6 @@
 const Home = () => (
   <div className="home" data-testid="home-page">
-    <h1>Welcome to our page</h1>
+    <h1>Welcome to our page!</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
       molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
