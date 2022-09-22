@@ -1,22 +1,9 @@
-/* stylelint-disable no-descending-specificity */
-.calculator {
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-}
-
-.item:active {
-  background-color: #47b2f0;
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  transform: translateY(0);
-}
-
 body {
-  background-color: aliceblue;
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   font-family:
@@ -35,6 +22,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calculator-container {
+  flex-grow: 1;
+  width: 80%;
+  display: flex;
+  padding: 2rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.calculator-container h1 {
+  font-size: 2rem;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
 .item {
   width: 100px;
   height: 50px;
@@ -50,6 +64,12 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
+.item:active {
+  background-color: #47b2f0;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
 .double {
   width: 200px;
 }
@@ -60,6 +80,67 @@ body {
 
 .light-gray {
   background-color: rgb(224, 224, 224);
+}
+
+.dark-gray {
+  box-sizing: border-box;
+  border: 0 solid black;
+  display: flex;
+  padding-right: 1rem;
+  height: 50px;
+  width: 400px;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(133, 134, 148);
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2rem;
+}
+
+.nav-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navbar {
+  display: flex;
+  box-sizing: border-box;
+  column-gap: 2rem;
+  list-style: none;
+  justify-content: end;
+  padding: 1rem;
+  padding-right: 4rem;
+}
+
+.home {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home p {
+  text-align: justify;
+}
+
+.quote-container {
+  box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.quote-container p {
+  font-size: 2rem;
 }
 
 .input-row {
